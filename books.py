@@ -1,4 +1,10 @@
-texts = {"Jane Eyre": "1847", "Cane": "1923", "Wide Sargasso Sea": "1966", "Citizen: An American Lyric": "2014"}
+domain = 'http://walshbr.com/'
+pages = ['about','blog','pedagogy','projects','cv']
 
-for title, date in texts.items():
-    print(title + "was published in " + date)
+urls = []
+
+for page in pages:
+	url = domain + page
+	urls.append(url)
+
+print(urls)
